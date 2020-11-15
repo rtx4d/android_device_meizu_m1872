@@ -46,10 +46,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.m1872
 
-# Parts
-PRODUCT_PACKAGES += \
-    M1872Parts
-
  # Vibrator
  PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.3-service.m1872
