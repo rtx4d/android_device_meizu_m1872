@@ -9,9 +9,9 @@ cc_binary {
     relative_install_path: "hw",
     vendor: true,
     defaults: ["hidl_defaults"],
-    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.m1872",
-    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.m1872.xml"],
-    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.m1872.rc"],
+    name: "vendor.pa.biometrics.fingerprint.inscreen@1.0-service.m1872",
+    vintf_fragments: ["vendor.pa.biometrics.fingerprint.inscreen@1.0-service.m1872.xml"],
+    init_rc: ["vendor.pa.biometrics.fingerprint.inscreen@1.0-service.m1872.rc"],
     srcs: [
         "service.cpp",
         "FingerprintInscreen.cpp",
@@ -27,7 +27,8 @@ cc_binary {
         "libhwbinder",
         "libutils",
         "libcutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.pa.biometrics.fingerprint.inscreen@1.0",
         "vendor.synaptics.fingerprint.interfaces.extensions@1.0",
+        "vendor.goodix.hardware.biometrics.fingerprint@2.1",
     ],
 }

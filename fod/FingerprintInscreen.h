@@ -6,15 +6,16 @@
  *
  */
 
-#ifndef VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
-#define VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#ifndef VENDOR_PA_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#define VENDOR_PA_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
 
-#include <vendor/lineage/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
+#include <vendor/pa/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
 #include <vendor/synaptics/fingerprint/interfaces/extensions/1.0/ISteller.h>
 #include <vendor/synaptics/fingerprint/interfaces/extensions/1.0/IStellerClientCallback.h>
+#include <vendor/goodix/hardware/biometrics/fingerprint/2.1/IGoodixFingerprintDaemon.h>
 
 namespace vendor {
-namespace lineage {
+namespace pa {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
@@ -28,6 +29,7 @@ using ::android::hardware::hidl_vec;
 
 using ::vendor::synaptics::fingerprint::interfaces::extensions::V1_0::ISteller;
 using ::vendor::synaptics::fingerprint::interfaces::extensions::V1_0::IStellerClientCallback;
+using ::vendor::goodix::hardware::biometrics::fingerprint::V2_1::IGoodixFingerprintDaemon;
 
 class FingerprintInscreen : public IFingerprintInscreen {
   public:
@@ -68,7 +70,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace lineage
+}  // namespace pa
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#endif  // VENDOR_PA_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H

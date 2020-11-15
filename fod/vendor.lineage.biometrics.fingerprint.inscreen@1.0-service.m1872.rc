@@ -1,9 +1,0 @@
-service vendor.fingerprint-inscreen-1-0-m1872 /vendor/bin/hw/vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.m1872
-    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
-    class hal
-    user system
-    group system input
-    shutdown critical
-
-on post-fs-data
-    setprop sys.meizu.fingerprint.boot start
