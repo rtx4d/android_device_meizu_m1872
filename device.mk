@@ -9,10 +9,8 @@ $(call inherit-product, vendor/meizu/m1872/m1872-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-# Properties
--include $(LOCAL_PATH)/vendor_prop.mk
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-pa
 
 # Permissions
 PRODUCT_COPY_FILES += \
