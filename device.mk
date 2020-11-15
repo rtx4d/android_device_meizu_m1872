@@ -44,8 +44,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.m1872
 
- # Vibrator
- PRODUCT_PACKAGES += \
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    MeizuParanoidDoze
+
+# Vibrator
+PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.3-service.m1872
 
 # Inherit from sdm710-common
