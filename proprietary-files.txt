@@ -239,6 +239,13 @@ vendor/lib/modules/mpq-dmx-hw-plugin.ko
 vendor/lib/modules/qca_cld3_wlan.ko
 vendor/lib/modules/rdbg.ko
 
+# Fingerprint - Goodix (wtf Meizu?!)
+vendor/lib64/hw/fingerprint.goodix.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_ca.so
+
 # Sensor
 vendor/etc/sensors/config/8909w_Compal_ak991x_0.json
 vendor/etc/sensors/config/8909w_Compal_bmi160_0.json
